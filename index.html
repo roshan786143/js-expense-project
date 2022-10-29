@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Expense Project</title>
+    <script src="app.js" async charset="utf-8"></script>
+  </head>
+  <body>
+        <form onsubmit="saveToLocalStorage(event)">
+            <label> Choose Expense Amount : </label>
+            <input id='amount' type="text" name="amount"  required/>
+            <label> Choose description : </label>
+            <input id='description' type="text" name="description"  required/>
+            <label> Choose a category : </label>
+            <select class="category" name="category" id="category">
+              <option value="movie">Movies</option>
+              <option value="netflix">OTT</option>
+              <option value="party">Parties</option>
+              <option value="trip">Trip</option>
+            </select>
+            <button> addExpense </button>
+        </form>
+        <ul id='listOfExpenses'></ul>
+</body>
+</html>
